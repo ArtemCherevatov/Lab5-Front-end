@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота №5 - Варіант 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ЗАВДАННЯ 1 -->
+    <div class="task-section">
+        <div class="container">
+            <!-- ФОРМА -->
+            <div class="form-container">
+                <h2 class="text-center">Форма для заповнення</h2>
+                <form id="labForm" onsubmit="validateForm(event)">
+                    <div class="form-group">
+                        <label>ПІБ (Приклад: Ткаченко Т.Т.)</label>
+                        <input type="text" id="pib" placeholder="TTTTTT T.T.">
+                    </div>
+                    <div class="form-group">
+                        <label>Телефон</label>
+                        <input type="text" id="phone" placeholder="(444)-444-44-44">
+                    </div>
+                    <div class="form-group">
+                        <label>ID-card</label>
+                        <input type="text" id="idcard" placeholder="TT №444444">
+                    </div>
+                    <div class="form-group">
+                        <label>Факультет</label>
+                        <input type="text" id="faculty" placeholder="TTT">
+                    </div>
+                    <div class="form-group">
+                        <label>Дата народження</label>
+                        <input type="text" id="bdate" placeholder="44.44.4444">
+                    </div>
+                    <button type="submit">Підтвердити</button>
+                </form>
+            </div>
+
+            <!-- БЛОК ВИВОДУ ДАНИХ (З'являється збоку) -->
+            <div class="output-container" id="dataOutput">
+                <h2>Введені дані</h2>
+                <div id="outputContent"></div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- ЗАВДАННЯ 2 -->
+    <div class="task-section">
+        <div class="container column">
+            <h2>Завдання 2: Таблиця (Варіант 3)</h2>
+            <div class="palette-container">
+                <label for="colorPicker">Оберіть колір з палітри:</label>
+                <input type="color" id="colorPicker" value="#ff0000">
+            </div>
+            <table id="numTable"></table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
